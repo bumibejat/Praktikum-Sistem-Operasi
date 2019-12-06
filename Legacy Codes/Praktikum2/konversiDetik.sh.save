@@ -1,0 +1,14 @@
+#!/bin/bash
+clear
+
+echo -n "Masukkan satuan detik : ";
+read detik;
+let hasil=($detik%60);
+
+if [$detik -ge 3600] then
+	jam = $detik/3600;
+	$detik = $detik-$jam*3600;
+else 
+	"";
+
+echo "detiknya adalah : $jam";
